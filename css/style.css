@@ -1,0 +1,66 @@
+/* line 18, ../scss/style.scss */
+body {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+}
+
+/* line 23, ../scss/style.scss */
+.test {
+  background-color: red;
+  width: 20vw;
+  height: 30vh;
+  font-size: 18px;
+  font-family: "consolas";
+}
+/* line 33, ../scss/style.scss */
+.test p {
+  color: white;
+  transition: 1s;
+}
+/* line 37, ../scss/style.scss */
+.test p:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+/* line 44, ../scss/style.scss */
+a, p {
+  color: red;
+}
+
+/* line 48, ../scss/style.scss */
+.success, .error {
+  background-color: green;
+}
+
+/* line 55, ../scss/style.scss */
+ul li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 62, ../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul li li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  white-space: nowrap;
+  float: right;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+/* line 49, ../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul li li:first-child {
+  padding-right: 0;
+}
+/* line 50, ../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul li li:last-child {
+  padding-left: 0;
+}
+/* line 52, ../../../../Ruby25-x64/lib/ruby/gems/2.5.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_horizontal-list.scss */
+ul li li.last {
+  padding-left: 0;
+}

@@ -1,0 +1,57 @@
+@import "base";
+
+$red: red;
+$black: black;
+$white: white;
+
+@function hCalc($h, $i) {
+    @return $h*$i;
+}
+
+@mixin purpleTxt($i) {
+    color: purple;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: $i;
+}
+
+body {
+    background-color: $black;
+    color: $white;
+    font-size: $base-font-size;
+}
+.test {
+    background-color: $red;
+    width: 20vw;
+    height: hCalc(10vh,3);
+
+    font: {
+        size: 18px;
+        family: "consolas";
+    }
+
+    p {
+        color: $white;
+        transition: 1s;
+
+        &:hover {
+            color: yellow;
+            cursor: pointer;
+        }
+    }
+}
+
+a,p {
+    color: $red;
+}
+
+.success {
+    background-color: green;
+}
+
+.error {
+    @extend .success;
+}
+ul li {
+    @include horizontal-list(2px, right);
+}
