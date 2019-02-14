@@ -24,6 +24,7 @@ body {
     background-color: $red;
     width: 20vw;
     height: hCalc(10vh,3);
+    @include border-radius(5px, 5px);
 
     font: {
         size: 18px;
